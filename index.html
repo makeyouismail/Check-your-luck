@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter your name</h2>
+    <input type="text" id="name" placeholder="Your name">
+    <button onclick="checkName()">Check</button>
+
+    <div id="result"></div>
+
+    <script>
+        function checkName() {
+            let name = document.getElementById("name").value;
+            let result = document.getElementById("result");
+
+            if (name.toLowerCase().includes("n")) {
+                result.textContent = "You are a Nigga";
+            } else {
+                result.textContent = "You have a bright future";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
