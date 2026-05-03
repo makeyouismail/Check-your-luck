@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Name Checker</title>
@@ -8,16 +9,20 @@
             font-family: Arial, sans-serif;
             margin: 50px;
         }
-        input, button {
+
+        input,
+        button {
             padding: 10px;
             font-size: 16px;
         }
+
         #result {
             margin-top: 20px;
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
 
     <h2>Enter your name</h2>
@@ -32,12 +37,13 @@
             let result = document.getElementById("result");
 
             if (name.toLowerCase().includes("n")) {
-                result.textContent = "Your name contains the letter N.";
+                result.textContent = "You are a Nigga";
             } else {
-                result.textContent = "Your name does not contain the letter N.";
+                result.textContent = "You have a bright future";
             }
         }
     </script>
 
 </body>
+
 </html>
